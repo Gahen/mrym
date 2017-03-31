@@ -35,6 +35,11 @@
 				 */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
+			<?php 
+				 /** FLAGS DEL TEMA MAGIARYM **/
+				 $contacto = get_post_custom_values('contacto'); 
+			?>
+
 			<?php /* How to display posts of the Gallery format. The gallery category is the old way. */ ?>
 
 				<?php if ( ( function_exists( 'get_post_format' ) && 'aside' == get_post_format( $post->ID ) ) || in_category( _x( 'asides', 'asides category slug', 'twentyten' ) )  ) : ?>
@@ -71,6 +76,13 @@
 							<?php the_excerpt(); ?>
 						</div><!-- .entry-summary -->
 				<?php else : ?>
+						<?php if ($contacto): ?>
+						<div class="contacto">
+							<?php echo $contacto[0]; ?>
+							<a href="https://www.facebook.com/rulin.meterete" class="contacto__fb">
+							</a>
+						</div>
+						<?php endif; ?>
 						<div class="entry-content">
 							<?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'twentyten' ) ); ?>
 							<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>

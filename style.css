@@ -291,6 +291,10 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
 	clear: right;
 }
 
+.entry-title {
+	display: none;
+}
+
 body {
 	position:relative;
 	width: 1024px;
@@ -331,18 +335,16 @@ body {
 	list-style:none;
 	margin: 0;
 }
-#top_menu li a {
-	padding: 10px 26px;
-}
 #main {
 	float:left;
 	padding: 0 35px 0 45px;
+	width: 100%;
 }
 
 .content {
 	margin: 0 20px 0 0;
 	font-size: 13px;
-	width: 1000px;
+	width: 915px;
 }
 .content h4 {
 	margin: 0;
@@ -359,62 +361,29 @@ body {
 }
 
 
-#post-6 {
-	margin: 0 0 0 55px;
-}
-
-#post-6 div.left {
-	width:255px;
-}
-
-#post-6 div.left-panel {
-	padding: 10px 15px;
-	width:295px;
-}
-
-#post-6 div.left-panel p{
-	margin:0;
-}
-#post-6 .wp-image-40, #post-6 .wp-image-37 {
-	margin-left:20px;
-}
-#post-6 .wp-image-74 {
-	position:absolute;
-	right: 200px;
-	top: 145px;
-}
-#post-8 {
-width: 900px;	
-}
 img.wp-image-76, #post-8 img {
 	float:left;
 	margin: -20px 20px 0 0;
 }
 
-#post-10 .prepend-top {
-	margin-left: -25px;
-	margin-top: 6.5em;
-	width: 430px;
-}
-
-#post-12 {
+#post-46 {
 	padding-top:270px;
 	background: url('img/apertura-fotos-y-video.png') no-repeat top center;
 	margin: 10px 0 0 40px;
 	width:860px;
 }
 
-#post-12 h3 {
+#post-46 h3 {
 	margin: 22px 0 0 0;
 	text-align:center
 }
 
-#post-12 object {
+#post-46 object {
 	float:left;
 	margin: 10px;
 }
 
-#post-14 {
+#post-40 {
     background: url("img/carta-contacto.png") no-repeat scroll top center transparent;
 	margin: 20px 200px;
 	height: 473px;
@@ -422,47 +391,45 @@ img.wp-image-76, #post-8 img {
 	overflow: hidden;
 }
 
-#post-14 .entry-content{
+#post-40 .entry-content{
 	margin: 155px 0 0 242px;
 }
 
-#post-14 a.wp-image-86 {
+#post-40 a.wp-image-86 {
     position: absolute;
     right: 288px;
     top: 250px;
 }
 
 /*** TEXTOS ***/
-#menu-header li a {
+.menu-header li a {
 	display:block;
-	padding-top: 25px;
-}
-#menu-header li {
 	background-repeat: no-repeat;
 	background-position: center top;
 	overflow:hidden;
 	height:20px;
+	color: transparent;
 }
 
-.menu-quienes {
+.menu-quienes a {
 	background-image: url("img/tit_quienes_somos.png");
 	width: 153px;
 }
-.menu-shows {
+.menu-shows a {
 	background-image: url("img/tit_nuestros_shows.png");
 	width: 140px;
 }
-.menu-adicionales {
+.menu-adicionales a {
 	background-image: url("img/tit_adicionales.png");
 	width: 145px;
 	padding-left:10px;
 }
-.menu-multimedia {
+.menu-multimedia a {
 	background-image: url("img/tit_fotos.png");
 	width: 130px;
 	padding-left:1px;
 }
-.menu-contacto {
+.menu-contacto a {
 	background-image: url("img/tit_contacto.png");
 	width: 80px;
 }
@@ -557,4 +524,118 @@ h3 {
 	position: relative;
 	top: 175px;
 	left: -350px;
+}
+
+.quienes-somos__side {
+	float: left;
+	width: 320px;
+	padding: 75px 15px 50px 40px;
+	background: url('img/title_quienes-somos.png') no-repeat top right;
+	background-size: 364px 81px;
+	margin: 0 0 0 30px;
+}
+
+.quienes-somos__footer {
+	background: url('img/footer_quienes-somos.png') no-repeat bottom center;
+	background-size: 351px 300px;
+	width: 330px;
+	height: 300px;
+	margin-left: -20px;
+}
+
+.quienes-somos__rulin h4, .quienes-somos__meterete h4{
+	font-size: 14px;
+}
+
+.quienes-somos__rulin, .quienes-somos__meterete {
+	float: left;
+	width: 290px;
+	padding-left: 80px;
+	padding: 10px 0 20px 220px;
+}
+.quienes-somos__rulin {
+	background: url('img/quienes-somos__rulin.png') no-repeat top left;
+	background-size: 224px 311px;
+}
+.quienes-somos__meterete {
+	background: url('img/quienes-somos__meterete.png') no-repeat top left;
+	background-size: 224px 311px;
+}
+
+.quienes-somos__label {
+	background: url('img/quienes-somos__label.png') no-repeat top left;
+	background-size: 325px 72px;
+	width: 325px;
+	height: 72px;
+	position: absolute;
+	top: 110px;
+	right: 160px;
+}
+
+/*** ALQUILER DE JUEGOS ***/
+#post-44 .entry-content {
+    padding: 100px 0 0 545px;
+    background: url('img/castillo.png') no-repeat top left;
+    background-size: 535px 643px;
+    margin-left: -45px;
+    margin-top: -35px;
+	height: 550px;
+}
+
+
+/*** NUESTROS SHOWS ***/
+#post-42 .entry-content {
+	margin-left: 25px;
+    padding: 20px 0 0 450px;
+    background: url('img/title_que-shows-hacemos2.png') no-repeat top left;
+	height: 550px;
+}
+
+
+/*** FOTOS Y VIDEOS ***/
+#post-46 .entry-content {
+	width: 800px;
+	text-align: center;
+	margin: auto;
+}
+#post-46 .slideshowlink {
+	display: none;
+}
+
+#post-46 h4 {
+	margin-top: 16px;
+}
+
+/*** Contacto ***/
+#post-48 .contacto {
+	padding: 230px 230px 200px 255px;
+	background: url('img/contacto.png') no-repeat top left;
+	width: 105px;
+	margin: auto;
+	font-size: 16px;
+}
+#post-48 h4 {
+	color: turquoise;
+}
+#post-48 .contacto__info {
+	background: url('img/mail.png') no-repeat top left;
+	width: 150px;
+	height: 30px;
+}
+#post-48 .contacto__fb {
+	background: url('img/fb.png') no-repeat top left;
+	background-size: 60px 60px;
+	width: 60px;
+	height: 60px;
+	display: block;
+	position: absolute;
+	top: 300px;
+	right: 280px;
+}
+#post-48 p {
+	margin: 0 0 1em;
+}
+#post-48 .entry-content {
+	width: 850px;
+	margin: auto;
 }
